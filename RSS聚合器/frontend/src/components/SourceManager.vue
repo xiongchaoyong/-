@@ -48,7 +48,7 @@
 
     <!-- 推荐源 -->
     <h3 style="margin: 24px 0 12px; color: #303133">推荐 RSS 源</h3>
-    <el-collapse v-model="activeCategories">
+    <el-collapse>
       <el-collapse-item
         v-for="(sources, category) in recommendations"
         :key="category"
@@ -88,7 +88,6 @@ const emit = defineEmits(['update:visible', 'sourcesChanged'])
 
 const sources = ref([])
 const recommendations = ref({})
-const activeCategories = ref([])
 const existingUrls = computed(() => new Set(sources.value.map(s => s.url)))
 
 const newName = ref('')
@@ -132,7 +131,6 @@ async function loadRecommendations() {
       }
     }
     recommendations.value = cats
-    activeCategories.value = Object.keys(cats)
   } catch {
     // ignore
   }
