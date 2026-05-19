@@ -1,10 +1,12 @@
 <template>
   <el-dialog
-    v-model="visible"
+    :model-value="visible"
+    @update:model-value="$emit('update:visible', $event)"
     title="抓取与总结"
     width="560px"
     :close-on-click-modal="false"
-    @close="resetState">
+    destroy-on-close
+    @closed="resetState">
 
     <!-- 初始状态：触发按钮 -->
     <div v-if="!taskId" style="text-align: center; padding: 24px">

@@ -34,7 +34,7 @@
     </div>
 
     <!-- AI 配置弹窗 -->
-    <el-dialog v-model="showConfigDialog" title="AI 接口配置" width="520px" :close-on-click-modal="false">
+    <el-dialog v-model="showConfigDialog" title="AI 接口配置" width="520px" :close-on-click-modal="false" destroy-on-close>
       <el-form :model="configForm" label-position="top">
         <el-form-item label="API Key">
           <el-input v-model="configForm.api_key" type="password" show-password placeholder="sk-..." />

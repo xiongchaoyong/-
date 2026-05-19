@@ -1,10 +1,11 @@
 <template>
   <el-drawer
-    v-model="visible"
+    :model-value="visible"
+    @update:model-value="$emit('update:visible', $event)"
     title="RSS 源管理"
     direction="rtl"
     size="720px"
-    @close="$emit('update:visible', false)">
+    destroy-on-close
 
     <!-- 手动添加 -->
     <div class="add-section">
@@ -133,6 +134,7 @@ async function loadRecommendations() {
       }
     }
     recommendations.value = cats
+    activeCategories.value = Object.keys(cats)
   } catch {
     // ignore
   }
