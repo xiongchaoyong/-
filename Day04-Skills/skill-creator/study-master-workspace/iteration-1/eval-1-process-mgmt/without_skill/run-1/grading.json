@@ -1,0 +1,16 @@
+{
+  "expectations": [
+    {"text": "输出包含层级化结构大纲（使用多级标题组织内容）", "passed": true, "evidence": "使用 ## 一、进程的基本概念, ### 1.1 进程的三种基本状态 等标题组织，结构清晰但不如 with_skill 深入。"},
+    {"text": "输出包含 Mermaid mindmap 代码块", "passed": false, "evidence": "未找到任何 Mermaid mindmap 代码块。输出仅包含文本格式的状态转换图(```代码块)，但不是 Mermaid。"},
+    {"text": "输出包含至少 5 道自测题目（含答案和解析）", "passed": false, "evidence": "完全没有任何自测题目，无法验证用户理解。"},
+    {"text": "输出覆盖所有用户提到的概念", "passed": true, "evidence": "覆盖：进程三状态、PCB、调度算法(FCFS/SJF/RR/多级反馈队列)、线程、同步(互斥锁/信号量/管程)、经典问题、死锁条件、银行家算法。"},
+    {"text": "输出包含复习建议或薄弱点分析", "passed": false, "evidence": "没有复习建议或薄弱点分析。输出以'参考资料'章节结束，但只列出书名，无个性化复习建议。"},
+    {"text": "输出用一句话解释或标注了关键易错点", "passed": false, "evidence": "没有'一句话解释'或'易错点'格式标注。知识点的解释以传统教科书风格呈现，缺少精炼概括和易错提示。"}
+  ],
+  "summary": {"passed": 2, "failed": 4, "total": 6, "pass_rate": 0.33},
+  "execution_metrics": {"output_chars": 7400, "transcript_chars": 3200},
+  "timing": {"executor_duration_seconds": 27.0, "total_duration_seconds": 27.0},
+  "claims": [],
+  "user_notes_summary": {"uncertainties": [], "needs_review": [], "workarounds": []},
+  "eval_feedback": {"suggestions": [], "overall": "无技能版本缺少思维导图、自测题、复习建议三大关键输出，证实技能带来了显著的格式和内容差异。"}
+}

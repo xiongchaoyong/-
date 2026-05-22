@@ -1,0 +1,66 @@
+// 网易云音乐主题色彩变量
+$theme-red: #C62F2F;
+$theme-red-hover: #D93B3B;
+$theme-red-active: #B02727;
+
+// 背景色
+$bg-white: #ffffff;
+$bg-page: #f5f5f5;
+$bg-dark: #1a1a1a;
+$nav-bg: #242424;
+$nav-item-hover: #3a3a3a;
+
+// 文字颜色
+$text-primary: #333333;
+$text-secondary: #666666;
+$text-muted: #999999;
+$text-white: #ffffff;
+$text-nav: #cccccc;
+
+// 边框
+$border-color: #e1e1e1;
+$border-light: #f0f0f0;
+
+// 间距
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 48px;
+
+// 字体大小
+$font-xs: 11px;
+$font-sm: 12px;
+$font-md: 13px;
+$font-lg: 14px;
+$font-xl: 16px;
+$font-xxl: 18px;
+$font-title: 22px;
+$font-big: 26px;
+
+// 圆角
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 10px;
+$radius-round: 50%;
+
+// 阴影
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+$shadow-md: 0 2px 8px rgba(0, 0, 0, 0.12);
+$shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.16);
+
+// 布局 — 网易云音乐尺寸
+$navbar-height: 50px;
+$player-height: 53px;
+$content-outer: 1100px;
+$content-inner: 982px;
+$sidebar-left: 240px;
+$sidebar-right: 212px;
+$content-center: 530px;
+$sidebar-gap: 20px;
+
+// 断点
+$bp-sm: 768px;
+$bp-md: 1024px;
+$bp-lg: 1280px;

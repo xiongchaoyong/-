@@ -1,0 +1,16 @@
+{
+  "expectations": [
+    {"text": "输出包含费曼式讲解（用大白话/类比/生活例子解释）", "passed": true, "evidence": "使用打电话类比三次握手、挂电话类比四次挥手、快递公司运货类比拥塞控制四算法，均为生活化白话讲解。"},
+    {"text": "明确解释了三次握手为什么是三次", "passed": true, "evidence": "明确说明：两次不安全(旧的滞留SYN到服务器，服务器误建连接浪费资源)；三次解决了这个问题(客户端收到SYN+ACK后可判断历史连接)；四次多余(三次已确认双向能力)。"},
+    {"text": "明确解释了四次挥手为什么是四次", "passed": true, "evidence": "明确说明：TCP全双工，两个方向需要各自关闭；第二次ACK和第三次FIN不能合并(服务器可能还有数据在发)；三次挥手不可能除非服务器无数据立刻合并。"},
+    {"text": "完整梳理了四个拥塞控制算法（慢开始、拥塞避免、快重传、快恢复）及其关系", "passed": true, "evidence": "四个算法全部深度讲解：慢开始(指数增长)、拥塞避免(线性增长)、快重传(3重复ACK)、快恢复(窗口减半不归零)，含ASCII状态转换图和完整故事线。第4节总结对比表。"},
+    {"text": "输出包含 Mermaid mindmap 代码块", "passed": false, "evidence": "没有 Mermaid mindmap 代码块。输出仅有传统文本格式呈现，缺少 Mermaid 可视化思维导图。"},
+    {"text": "输出包含自测题目", "passed": false, "evidence": "完全没有任何自测练习题。输出以'记忆口诀'和'总结对比表'结束，无交互式自测题目供用户检验理解。"}
+  ],
+  "summary": {"passed": 4, "failed": 2, "total": 6, "pass_rate": 0.67},
+  "execution_metrics": {"output_chars": 9200, "transcript_chars": 3800},
+  "timing": {"executor_duration_seconds": 40.2, "total_duration_seconds": 40.2},
+  "claims": [],
+  "user_notes_summary": {"uncertainties": [], "needs_review": [], "workarounds": []},
+  "eval_feedback": {"suggestions": [], "overall": "无技能版本费曼讲解质量很高(类比生动)，但缺少 Mermaid 思维导图和自测题两个关键输出。记忆口诀是额外亮点。"}
+}

@@ -1,0 +1,16 @@
+{
+  "expectations": [
+    {"text": "输出包含费曼式讲解（用大白话/类比/生活例子解释）", "passed": true, "evidence": "对讲机通话类比解释三次握手和四次挥手，开车去机场类比解释拥塞控制四算法，均为生活化场景。"},
+    {"text": "明确解释了三次握手为什么是三次（而不是两次或四次）", "passed": true, "evidence": "明确说明：两次不安全(旧SYN滞留可能浪费资源)；三次刚好确认双方收发能力；四次冗余(第三次可带数据)。"},
+    {"text": "明确解释了四次挥手为什么是四次（而不是三次）", "passed": true, "evidence": "明确说明：TCP全双工，两个方向需独立关闭；第二次ACK和第三次FIN不能合并(服务器还有数据要发)；只有服务器也无数据时才可合并为三次。"},
+    {"text": "完整梳理了四个拥塞控制算法（慢开始、拥塞避免、快重传、快恢复）及其关系", "passed": true, "evidence": "四个算法全部覆盖：状态转换ASCII图展示流转变换；对比表列出触发条件和动作；开车去机场类比串联四种算法。"},
+    {"text": "输出包含 Mermaid mindmap 代码块", "passed": true, "evidence": "第5行有 ```mermaid mindmap root((TCP 核心机制))，包含连接管理(三次握手/四次挥手)和拥塞控制(四个算法)分支，标注了🔴高频考点🟡理解难点。"},
+    {"text": "输出包含自测题目", "passed": true, "evidence": "10道题：基础回忆3题+理解辨析3题+综合应用2题+关联思考2题，所有题目有折叠答案和详细解析。"}
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0},
+  "execution_metrics": {"output_chars": 12800, "transcript_chars": 5400},
+  "timing": {"executor_duration_seconds": 51.8, "total_duration_seconds": 51.8},
+  "claims": [],
+  "user_notes_summary": {"uncertainties": [], "needs_review": [], "workarounds": []},
+  "eval_feedback": {"suggestions": [], "overall": "所有断言均通过。费曼讲解质量特别高——对讲机和开车类比通俗易懂，且每处讲解配有'一句话记忆点'。"}
+}

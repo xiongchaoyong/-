@@ -1,0 +1,15 @@
+{
+  "expectations": [
+    {"text": "输出包含快速排序、归并排序、堆排序的对比分析", "passed": true, "evidence": "深度剖析三者在第2.1/2.2/2.3节，第3节13维度横向对比表，第4节决策流程图。"},
+    {"text": "输出包含时间/空间复杂度、稳定性的对比表格", "passed": true, "evidence": "第1.2节全部算法速查表含时间/空间/稳定性列；第2节每个算法有详细复杂度分析；第3节横向对比表。"},
+    {"text": "输出包含 Mermaid mindmap 代码块", "passed": false, "evidence": "没有 Mermaid mindmap 代码块。思维导图以纯文本字符画(ASCII art)和文本树形图呈现，虽然内容详实但不满足 Mermaid 格式要求。"},
+    {"text": "输出包含至少 3 道自测题目（含答案）", "passed": true, "evidence": "第6节自测习题含基础题6道(Q1-Q6)、进阶题6道(Q7-Q12)、编程题4道(Q13-Q16)共16道，第7节全部有详细答案。"},
+    {"text": "输出包含记忆技巧或区分方法", "passed": true, "evidence": "第4节决策流程图给出口诀'随意快排/稳定归并/省空间堆/小插排'；附录有'快速记忆口诀'；思维导图含'记忆口诀'区域。"}
+  ],
+  "summary": {"passed": 4, "failed": 1, "total": 5, "pass_rate": 0.80},
+  "execution_metrics": {"output_chars": 25600, "transcript_chars": 7200},
+  "timing": {"executor_duration_seconds": 74.6, "total_duration_seconds": 74.6},
+  "claims": [],
+  "user_notes_summary": {"uncertainties": [], "needs_review": [], "workarounds": []},
+  "eval_feedback": {"suggestions": [], "overall": "无技能版本内容量很大甚至超过有技能版本，但缺少 Mermaid 格式思维导图——用了 ASCII art 代替，不符合断言要求的 Mermaid 格式。"}
+}

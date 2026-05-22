@@ -1,0 +1,16 @@
+{
+  "expectations": [
+    {"text": "输出包含层级化结构大纲（使用多级标题组织内容）", "passed": true, "evidence": "使用 ## 思维导图, ## 结构化笔记, ### 1. 进程与 PCB, #### 1.1 进程的概念 等多级标题，结构清晰。"},
+    {"text": "输出包含 Mermaid mindmap 代码块", "passed": true, "evidence": "第5行包含 ```mermaid mindmap 根节点为 root((进程管理))，含完整分支。"},
+    {"text": "输出包含至少 5 道自测题目（含答案和解析）", "passed": true, "evidence": "共 10 道题，分布在基础回忆(3)、理解辨析(3)、综合应用(3)、关联思考(1)，每题含 <details> 折叠答案和解析。"},
+    {"text": "输出覆盖所有用户提到的概念", "passed": true, "evidence": "覆盖：进程三状态、PCB、四种调度算法(FCFS/SJF/RR/多级反馈队列)、线程(共享/私有)、同步(互斥锁/信号量PV/管程)、三个经典问题、死锁条件、银行家算法。"},
+    {"text": "输出包含复习建议或薄弱点分析", "passed": true, "evidence": "包含 ## 复习建议 章节，含薄弱环节分析(PV代码/调度计算/银行家算法流程)、知识关联表、下一步优先级建议、推荐资源。"},
+    {"text": "输出用一句话解释或标注了关键易错点", "passed": true, "evidence": "每个概念均有'一句话解释'+'易错点'标注，如 1.1 进程概念、1.2 状态转换、1.3 PCB、各调度算法等。"}
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0},
+  "execution_metrics": {"output_chars": 15200, "transcript_chars": 6200},
+  "timing": {"executor_duration_seconds": 60.8, "total_duration_seconds": 60.8},
+  "claims": [],
+  "user_notes_summary": {"uncertainties": [], "needs_review": [], "workarounds": []},
+  "eval_feedback": {"suggestions": [], "overall": "所有断言均通过，输出严格按照技能模板生成，质量高。"}
+}

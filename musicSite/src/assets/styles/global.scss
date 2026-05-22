@@ -1,0 +1,32 @@
+@use 'reset';
+
+body {
+  min-height: 100vh;
+  background: $bg-page;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+// Element Plus 主题覆盖
+.el-button--primary {
+  --el-button-bg-color: #{$theme-red};
+  --el-button-border-color: #{$theme-red};
+  --el-button-hover-bg-color: #{$theme-red-hover};
+  --el-button-hover-border-color: #{$theme-red-hover};
+  --el-button-active-bg-color: #{$theme-red-active};
+  --el-button-active-border-color: #{$theme-red-active};
+}
+
+.el-input__wrapper.is-focus {
+  box-shadow: 0 0 0 1px $theme-red inset !important;
+}
+
+.el-tabs__active-bar {
+  background-color: $theme-red !important;
+}
+
+.el-tabs__item.is-active {
+  color: $theme-red !important;
+}
