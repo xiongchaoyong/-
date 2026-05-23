@@ -5,7 +5,7 @@ from jose import jwt
 
 from database import get_db
 from models import User
-from middleware.auth import JWT_SECRET, get_current_user
+from middleware import JWT_SECRET, get_current_user
 
 router = APIRouter(prefix='/user', tags=['用户认证'])
 pwd_context = CryptContext(schemes=['bcrypt'], deprecated='auto')
